@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title> P's Art Gallery </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="home.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	
+</head>
+
+<body style="background-color:rgb(152, 27, 0);">
+	<header> 
+	<h1> Art by P </h1>
+	<img src="collage.png" alt="Collage Image"/>
+		<nav class="header">
+			<ul>
+ 				<li><a href="home.html" class="header">Home</a></li>
+  				<li><a href="about.html" class="header">About Me</a></li>
+  				<li><a href="artwork.html" class="header">Artwork</a></li>
+  				<li><a href="contact.html" class="header">Contact</a></li>
+				<!-- <li><a href="#shop" class="header">Shop</a></li> -->
+			</ul>
+		</nav>
+	</header>
+
+	
+	<main>
+
+	<div class="container">
+		<div class="swiper">
+  		<!-- Additional required wrapper -->
+  		<div class="swiper-wrapper">
+   		 
+		<!-- Slides -->
+    		<div class="swiper-slide"><img src="IMG_3437 Medium.jpeg"></div>
+   		<div class="swiper-slide"><img src="IMG_0501 Medium.jpeg"></div>
+   		<div class="swiper-slide"><img src="IMG_1273 Medium.jpeg"></div>
+		<div class="swiper-slide"><img src="IMG_2794 Medium.jpeg"></div>
+		<div class="swiper-slide"><video height="500" width="800" class="video" controls>
+		<source src="joined_video_03382a6796894a1abae799d56563af1b.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+		</video></div>
+  		</div>
+ 		 <!-- If we need pagination -->
+  		<div class="swiper-pagination"></div>
+
+ 		 <!-- If we need navigation buttons -->
+ 		 <div class="swiper-button-prev"></div>
+ 		 <div class="swiper-button-next"></div>
+			
+		</div>
+	</div>
+	
+	</main>
+	
+	<footer>
+		<p>Hello</p>
+
+	</footer>
+
+	
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+const swiper = new Swiper('.swiper', {
+  
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+ 
+});
+
+</script>
+
+
+
+
+
+</body>
+
+</html>
